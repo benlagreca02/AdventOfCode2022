@@ -28,9 +28,6 @@ int main(){
         }
 
         itemsPerCompartment = numCharsRead/2;
-        printf("lineLength: %zu\n", numCharsRead);
-        printf("Items per compartment: %zu\n", itemsPerCompartment);
-        printf("Line data: %s\n", lineData);
 
         left  = (char*) malloc(itemsPerCompartment);
         right = (char*) malloc(itemsPerCompartment);
@@ -39,14 +36,10 @@ int main(){
             left[i] = lineData[i];
             right[i] = lineData[i + itemsPerCompartment];
         }
-        printf("left:  %s\n", left);
-        printf("right: %s\n", right);
-        printf("---------------------------------\n");
 
-        free(lineData);
         free(left);
         free(right);
-        lineData = NULL;
+        // lineData = NULL;
     }
 
 
