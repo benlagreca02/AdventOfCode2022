@@ -27,7 +27,7 @@ bool isLowercase(char c){
 int main(){
 
     FILE *inputFile;
-    inputFile = fopen("inputSimple2.txt", "r");
+    inputFile = fopen("input.txt", "r");
     if(inputFile == NULL){
         printf("Couldn't open file!\n");
         return -1;
