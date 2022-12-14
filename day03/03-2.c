@@ -48,7 +48,7 @@ int main(){
 
     while ((numCharsRead = getline(&lineData, &lineLength, inputFile)) != -1){
         int  buffIndex = 0;  
-        char commonItem = NULL;
+        char commonItem = '\0';
 
         // end of file
         if(lineData[0] == '\n'){
@@ -121,5 +121,6 @@ int main(){
 
     printf("Final priority sum: %d\n", totalPriority);
     printf("Done!\n");
+    fclose(inputFile);
 }
 

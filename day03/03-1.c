@@ -122,5 +122,6 @@ int main(){
 
     printf("Final priority sum: %d\n", totalPriority);
     printf("Done!\n");
+    fclose(inputFile);
 }
 
